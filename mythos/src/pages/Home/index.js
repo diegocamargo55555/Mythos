@@ -9,11 +9,7 @@ function home() {
             <h1> Bem vindo à página HOME</h1>
 
             <div>
-                <p>dadwadawd </p>
-                <br/>
-                <Link to='/sobre'>Sobre</Link>
-                <br />
-                <Link to='/contato'>Contato</Link>
+
 
             </div>
 

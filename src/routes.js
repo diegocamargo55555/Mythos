@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from './pages/Home';
+import Home from './pages/Home/home_page';
 import Header from "./components/Header";
-import Error from "./pages/Error";
-import Pesquisa from "./pages/Pesquisa";
-import Acessibilidade from "./pages/Acessibilidade";
+import Error from "./pages/Error/error._page";
+import Pesquisa from "./pages/Pesquisa/pesquisa_page";
+import Acessibilidade from "./pages/Acessibilidade/acessibilidade_page";
 
 export default RoutesApp;
 
@@ -23,5 +23,6 @@ function RoutesApp() {
         </BrowserRouter>
     );
 }
+
 
 

@@ -68,3 +68,4 @@ function home() {
 
 export default home;
 //                    <img src={imagem} width="250" height="250" />
+

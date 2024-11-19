@@ -1,0 +1,20 @@
+.header{
+    background-color: #1B766A;
+    width: 100%;
+    
+}
+.body{
+    margin-top: -10px;
+}
+.titulo {
+    font-family: "Jim Nightshade", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #F4F4F9;
+    text-decoration: none;
+    
+}
+
+.items{
+    background-color: #B8D8D9;
+}

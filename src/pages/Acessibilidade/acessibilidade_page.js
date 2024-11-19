@@ -4,7 +4,6 @@ import "./acessibilidade.css"
 const Acessibilidade = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
   
-    // Carregar preferência do modo escuro ao montar o componente
     useEffect(() => {
       const savedMode = localStorage.getItem("darkMode");
       if (savedMode === "enabled") {
@@ -12,7 +11,6 @@ const Acessibilidade = () => {
       }
     }, []);
   
-    // Atualizar o localStorage sempre que o estado mudar
     useEffect(() => {
       localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
     }, [isDarkMode]);

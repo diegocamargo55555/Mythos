@@ -1,11 +1,8 @@
 # Getting Started with Create React App
 
-npm i react-router-dom
-
-npm install react-bootstrap bootstrap
-
-npm i styled-components
-
+### `npm i react-router-dom`
+### `npm i npm install react-bootstrap bootstrap`
+### `npm i npm i styled-components`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

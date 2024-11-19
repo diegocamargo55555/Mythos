@@ -4,6 +4,9 @@
     
 }
 .body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin-top: -10px;
 }
 .titulo {
@@ -17,4 +20,30 @@
 
 .items{
     background-color: #B8D8D9;
+    color: #090908;
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.acessibilidade{
+    padding-left: 25px;
+    margin-left: 134px;
+}
+.pesquisa{
+    margin-left: 400px;
+}
+.lista{
+    margin-top: 8px;
+    margin-bottom: 7px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 55px;
+    margin-left: 400px;
 }

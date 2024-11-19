@@ -1,7 +1,9 @@
 # Getting Started with Create React App
 
 npm i react-router-dom
+
 npm install react-bootstrap bootstrap
+
 npm i styled-components
 
 

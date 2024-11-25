@@ -3,6 +3,22 @@
     width: 100%;
     
 }
+.header-modoescuro{
+    background-color: #668586;
+    width: 100%;
+    color: #EDF2F4;
+}
+.item-modoEscuro{
+    background-color: #52626c;
+    color: #090908;
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 .body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -36,6 +52,7 @@
 }
 .pesquisa{
     margin-left: 400px;
+    padding-left: 55px;
 }
 .lista{
     margin-top: 8px;

@@ -2,12 +2,23 @@ import { Link } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./header.css";
 import { Titulo } from "./header";
+import React, { useState, useEffect, Component } from "react";
+import '../.././pages/Acessibilidade/acessibilidade_page.js';
+
 
 
 function Header() {
-    
-    return (
-        
+
+    const [isDarkMode, setIsDarkMode] = useState(false);
+  
+    useEffect(() => {
+      const savedMode = localStorage.getItem("darkMode");
+      if (savedMode === "enabled") {
+        setIsDarkMode(true);
+      }
+    }, []);
+
+        return(
         <header>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></link>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -20,7 +31,7 @@ function Header() {
 
             <body className="body">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid" className="header">
+                    <div class="container-fluid"className={isDarkMode ? "header-modoescuro" : "header"}>
                         <Link class="navbar-brand" to='/' className="titulo"><Titulo>Mythos</Titulo></Link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -28,7 +39,7 @@ function Header() {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <Link class="nav-link active" aria-current="page" to='/Acessibilidade'><p className="items acessibilidade">Acessibilidade</p></Link>
+                                    <Link class="nav-link active" aria-current="page" to='/Acessibilidade'><p className={isDarkMode ?  "item-modoEscuro acessibilidade" : "items acessibilidade"} >Acessibilidade</p></Link>
                                 </li>
                                 <NavDropdown title="Lista" id="basic-nav-dropdown" className="items lista">
                                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -51,11 +62,7 @@ function Header() {
                 </nav>
             </body>
         </header>
-        
-        
-
-
-    )
+        )
 }
 
 export default Header;

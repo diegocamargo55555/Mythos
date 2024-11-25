@@ -29,7 +29,6 @@ const Acessibilidade = () => {
           </header>
           <main>
             <p>Este é um exemplo de alternância entre modos kkkkkkkkkkkkkkkkkkkkk esse é bom.</p>
-            
             a
           </main>
         </div>

@@ -1,14 +1,21 @@
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Title } from "./styles";
+import React, { useState, useEffect, Component } from "react";
 import imagem from "../../assets/lore.png"
+import "./home.css"
 
-
-
-function home() {
+function Home() {
+    const [isDarkMode, setIsDarkMode] = useState(false);
+    useEffect(() => {
+      const savedMode = localStorage.getItem("darkMode");
+      if (savedMode === "enabled") {
+        setIsDarkMode(true);
+      }
+    }, []);
+    
     return (
-        <div class="container">
-
+        <div class="container" className={isDarkMode ? 'body-dark-mode' : "body"}>
             <Title> Bem vindo à página HOME</Title>
 
             <div class="row">
@@ -66,6 +73,4 @@ function home() {
     )
 }
 
-export default home;
-//                    <img src={imagem} width="250" height="250" />
-
+export default Home;

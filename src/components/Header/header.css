@@ -9,8 +9,8 @@
     color: #EDF2F4;
 }
 .item-modoEscuro{
-    background-color: #52626c;
-    color: #090908;
+    background-color: #759b92;    ;
+    color: #EDF2F4;
     height: 45px;
     width: 200px;
     font-size: 20px;
@@ -48,10 +48,10 @@
 
 .acessibilidade{
     padding-left: 25px;
-    margin-left: 134px;
+    margin-left: 1%;
 }
 .pesquisa{
-    margin-left: 400px;
+    margin-left: 230%;
     padding-left: 55px;
 }
 .lista{
@@ -62,5 +62,5 @@
     align-items: center;
     text-align: center;
     padding-left: 55px;
-    margin-left: 400px;
+    margin-left: 80%;
 }

@@ -1,0 +1,12 @@
+.body{
+    margin: 0;
+    width: 100%;
+    background-color: #F4F4F9;
+    color: #090908;
+}
+.body-dark-mode{
+    margin: 0;
+    width: 100%;
+    background-color: #1D1E2C;
+    color: #EDF2F4;
+}

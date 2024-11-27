@@ -29,8 +29,8 @@ function Header() {
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
             <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
 
-            <body className="body">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <body className={isDarkMode ? "body background-dark" : "body background-claro"}>
+                <nav class="navbar navbar-expand-sm">
                     <div class="container-fluid"className={isDarkMode ? "header-modoescuro" : "header"}>
                         <Link class="navbar-brand" to='/' className="titulo"><Titulo>Mythos</Titulo></Link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@ function Header() {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <Link class="nav-link active" aria-current="page" to='/Acessibilidade'><p className={isDarkMode ?  "item-modoEscuro acessibilidade" : "items acessibilidade"} >Acessibilidade</p></Link>
+                                    <Link class="nav-link active" aria-current="page" to='/Acessibilidade'><p className="items acessibilidade">Acessibilidade</p></Link>
                                 </li>
                                 <NavDropdown title="Lista" id="basic-nav-dropdown" className="items lista">
                                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

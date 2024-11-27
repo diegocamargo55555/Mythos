@@ -1,23 +1,22 @@
+.background-dark{
+    background-color: #1D1E2C;
+}
+
+.background-claro{
+    background-color: #EDF2F4;
+}
+
 .header{
     background-color: #1B766A;
     width: 100%;
-    
+    height: 100%;
+    margin: 0px;    
 }
 .header-modoescuro{
     background-color: #668586;
     width: 100%;
     color: #EDF2F4;
-}
-.item-modoEscuro{
-    background-color: #759b92;    ;
-    color: #EDF2F4;
-    height: 45px;
-    width: 200px;
-    font-size: 20px;
-    text-align: center;
-    position: relative;
-    display: flex;
-    align-items: center;
+    margin: 0px;
 }
 .body{
     font-family: "Poppins", sans-serif;
@@ -31,7 +30,6 @@
     font-style: normal;
     color: #F4F4F9;
     text-decoration: none;
-    
 }
 
 .items{
@@ -56,11 +54,11 @@
 }
 .lista{
     margin-top: 8px;
-    margin-bottom: 7px;
     position: relative;
     display: flex;
     align-items: center;
     text-align: center;
     padding-left: 55px;
-    margin-left: 80%;
+    padding-right: 55px;
+    margin-left: 72%;
 }

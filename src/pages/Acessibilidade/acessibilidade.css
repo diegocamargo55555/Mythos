@@ -1,39 +1,39 @@
 /* Estilos padrão (modo claro) */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-  }
+.body-claro {
+  height: 1000px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #EDF2F4;
+  color: black;
+}
 
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #eab464;
-    color: white;
-    transition: background-color 0.9s ease;
-  }
-  
-  button:hover {
-    background-color: #1D1E2C;
-  }
-  
-  .dark-mode {
-    width: 100%;
-    height: 1000px;
-    background-color: #1D1E2C;
-    color: #EDF2F4;
-  }
-  
-  .dark-mode button {
-    background-color: #BB6B00;
-  }
-  
-  .dark-mode button:hover {
-    background-color: #cbd7dc;
-    color:#1D1E2C
-  }
-  
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #eab464;
+  color: white;
+  transition: background-color 0.9s ease;
+}
+
+button:hover {
+  background-color: #1D1E2C;
+}
+
+.dark-mode {
+  width: 100%;
+  height: 1000px;
+  background-color: #1D1E2C;
+  color: #EDF2F4;
+}
+
+.dark-mode button {
+  background-color: #BB6B00;
+}
+
+.dark-mode button:hover {
+  background-color: #cbd7dc;
+  color:#1D1E2C
+}

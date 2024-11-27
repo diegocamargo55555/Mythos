@@ -19,7 +19,7 @@ const Acessibilidade = () => {
       window.location.reload();
     };
     return (
-      <div className={isDarkMode ? "dark-mode" : ""}>
+      <div className={isDarkMode ? "dark-mode" : "body-claro"}>
         <div>
           <header>
             <h1>{isDarkMode ? "Modo Escuro" : "Modo Claro"}</h1>
@@ -28,8 +28,7 @@ const Acessibilidade = () => {
             </button>
           </header>
           <main>
-            <p>Este é um exemplo de alternância entre modos kkkkkkkkkkkkkkkkkkkkk esse é bom.</p>
-            a
+            <p>Este é um exemplo de alternância entre modos.</p>
           </main>
         </div>
       </div>

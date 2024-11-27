@@ -5,6 +5,7 @@ import { textVide } from 'text-vide';
 const Acessibilidade = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
     const[isBig, setisBig] = useState(false);
+    const[bionicReadingActivated, setReading] = useState(false);
   
     useEffect(() => {
       const savedMode = localStorage.getItem("darkMode");
@@ -18,12 +19,21 @@ const Acessibilidade = () => {
         setisBig(true);
       }
     }, []);
+    useEffect(() =>{
+      const savedMode = localStorage.getItem("bionicReading");
+      if(savedMode == "enabled"){
+        setReading(true);
+      }
+    },[bionicReadingActivated]);
     useEffect(() => {
       localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
     }, [isDarkMode]);
     useEffect(() =>{
       localStorage.setItem("bigText", isBig ? "enabled" : "disabled");
     }, [isBig]);
+    useEffect(() =>{
+      localStorage.setItem("bionicReading", bionicReadingActivated ? "enabled" : "disabled");
+    });
     const toggleDarkMode = () => {
       setIsDarkMode((prevMode) => !prevMode);
       window.location.reload();
@@ -32,10 +42,15 @@ const Acessibilidade = () => {
       setisBig((prevMode) => !prevMode);
       window.location.reload();
     }
-   
-    const text =
-    'Bionic Reading is a new method facilitating the reading process by guiding the eyes through text with artificial fixation points. As a result, the reader is only focusing on the highlighted initial letters and lets the brain center complete the word. In a digital world dominated by shallow forms of reading, Bionic Reading aims to encourage a more in-depth reading and understanding of written content.';
-    const highlightedText = textVide(text);
+    const toggleReading = () => {
+      setReading((prevMode) => !prevMode);
+      window.location.reload();
+    }
+    const texto = (text) => {
+      const highlightedText = textVide(text);
+      return highlightedText
+    }
+      
     return (
       <div className={isDarkMode ? "dark-mode" : "body-claro"}>
         <div className={isBig ? "bigText" : "smallText"}> 
@@ -48,13 +63,13 @@ const Acessibilidade = () => {
            <button onClick={toggleBigText}>
               {isBig ? "Diminuir tamanho texto" : "Aumentar tamanho texto"}
             </button>
-            Leitura bionica
+            <button onClick={toggleReading}>
+              Acionar leitura bionica;
+            </button>
+            <p dangerouslySetInnerHTML={{ __html:texto("Bionic Reading is a new method facilitating the reading process by guiding the eyes through text.")}}></p>
           </header>
           <main>
           <div>
-              <p>
-                  {highlightedText}
-              </p>
             </div>
           </main>
         </div>

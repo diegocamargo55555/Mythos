@@ -2,47 +2,61 @@
 .body-claro {
   height: 1000px;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding-left: 10px;
+  font-family: "Poppins", sans-serif;
   background-color: #EDF2F4;
   color: black;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px;
+  padding-bottom: 3px;
   font-size: 16px;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
   background-color: #eab464;
-  color: white;
+  color: #EDF2F4;
   transition: background-color 0.9s ease;
 }
+.paletaCores{
+  box-shadow: 100px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
 
-button:hover {
+.paletaCores:hover {
   background-color: #1D1E2C;
 }
 
+.tamanho:hover{
+  transition: 0.8s ease-out;
+  font-size: 20px;
+}
 .dark-mode {
+  font-family: "Poppins", sans-serif;
   width: 100%;
   height: 1000px;
   background-color: #1D1E2C;
   color: #EDF2F4;
 }
 
-.dark-mode button {
+.dark-mode button{
   background-color: #BB6B00;
 }
 
-.dark-mode button:hover {
+.dark-mode .paletaCores:hover:hover {
   background-color: #cbd7dc;
   color:#1D1E2C
 }
-
+.bigText .tamanho:hover{
+  transition: 0.8s ease-out;
+  font-size: 16px;
+}
 .smallText {
   font-size: 16px;
 }
 .smallText h1{
-  font-size: 40px;
+  font-size: 30px;
 }
 .bigText {
   font-size: 36px;
@@ -50,8 +64,7 @@ button:hover {
 .bigText h1{
   font-size: larger;
 }
-.container{
-  font-size: 20px; 
-  border: 5px 
-  solid green;
+h1{
+  padding-left: 0px;
+  text-align: center;
 }

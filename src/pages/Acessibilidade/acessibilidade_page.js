@@ -24,7 +24,7 @@ const Acessibilidade = () => {
       if(savedMode == "enabled"){
         setReading(true);
       }
-    },[bionicReadingActivated]);
+    },[]);
     useEffect(() => {
       localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
     }, [isDarkMode]);
@@ -33,7 +33,7 @@ const Acessibilidade = () => {
     }, [isBig]);
     useEffect(() =>{
       localStorage.setItem("bionicReading", bionicReadingActivated ? "enabled" : "disabled");
-    });
+    }, [bionicReadingActivated]);
     const toggleDarkMode = () => {
       setIsDarkMode((prevMode) => !prevMode);
       window.location.reload();
@@ -46,27 +46,23 @@ const Acessibilidade = () => {
       setReading((prevMode) => !prevMode);
       window.location.reload();
     }
-    const texto = (text) => {
-      const highlightedText = textVide(text);
-      return highlightedText
-    }
-      
     return (
       <div className={isDarkMode ? "dark-mode" : "body-claro"}>
         <div className={isBig ? "bigText" : "smallText"}> 
           <header>
-            <h1>{isDarkMode ? "Modo Escuro" : "Modo Claro"}</h1>
-            <button onClick={toggleDarkMode}>
-              Alternar para {isDarkMode ? "Modo Claro" : "Modo Escuro"}
+            <h1>Opções de Acessibilidade</h1>
+            Paleta de cores: atualmente utilizando {isDarkMode ? "Modo Escuro" : "Modo Claro"}        
+            <button className="paletaCores" onClick={toggleDarkMode}>
+            <p dangerouslySetInnerHTML={{ __html: bionicReadingActivated ? textVide(isDarkMode ? "Alternar para Modo Claro" : "Alternar para Modo Escuro") : isDarkMode ? "Alternar para Modo Claro" : "Alternar para Modo Escuro"}}></p>
             </button>
-            <h1>Aumentar Texto</h1>
-           <button onClick={toggleBigText}>
-              {isBig ? "Diminuir tamanho texto" : "Aumentar tamanho texto"}
+            <p>Aumentar Texto</p>
+           <button className="tamanho" onClick={toggleBigText}>
+           <p dangerouslySetInnerHTML={{ __html: bionicReadingActivated ? textVide(isBig ? "Diminuir tamanho texto" : "Aumentar tamanho texto") : isBig ? "Diminuir tamanho texto" : "Aumentar tamanho texto"}}></p>
             </button>
             <button onClick={toggleReading}>
-              Acionar leitura bionica;
+            <p dangerouslySetInnerHTML={{ __html: bionicReadingActivated ? textVide("Desativar leitura bionica") : "Acionar leitura bionica"}}></p>
             </button>
-            <p dangerouslySetInnerHTML={{ __html:texto("Bionic Reading is a new method facilitating the reading process by guiding the eyes through text.")}}></p>
+            <p dangerouslySetInnerHTML={{ __html:bionicReadingActivated ?  textVide("Bionic Reading is a new method facilitating the reading process by guiding the eyes through text."): "sem leitura bionica"}}></p>
           </header>
           <main>
           <div>
@@ -77,3 +73,4 @@ const Acessibilidade = () => {
     );
   };
   export default Acessibilidade;
+//dangerouslySetInnerHTML={{ __html:texto("Bionic Reading is a new method facilitating the reading process by guiding the eyes through text.")}

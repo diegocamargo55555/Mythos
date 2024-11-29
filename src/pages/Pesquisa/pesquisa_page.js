@@ -2,6 +2,7 @@
 //https://medium.com/@andwebdev/design-and-develop-a-functional-search-bar-in-react-44321ed3c244
 //https://www.emgoto.com/react-search-bar/
 //https://dev.to/salehmubashar/search-bar-in-react-js-545l
+//https://www.youtube.com/watch?v=PFjfGv_WTpU
 
 function pesquisa() {
     return (

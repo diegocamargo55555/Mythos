@@ -51,22 +51,46 @@ const Acessibilidade = () => {
         <div className={isBig ? "bigText" : "smallText"}> 
           <header>
             <h1>Opções de Acessibilidade</h1>
-            Paleta de cores: atualmente utilizando {isDarkMode ? "Modo Escuro" : "Modo Claro"}        
-            <button className="paletaCores" onClick={toggleDarkMode}>
-            <p dangerouslySetInnerHTML={{ __html: bionicReadingActivated ? textVide(isDarkMode ? "Alternar para Modo Claro" : "Alternar para Modo Escuro") : isDarkMode ? "Alternar para Modo Claro" : "Alternar para Modo Escuro"}}></p>
-            </button>
-            <p>Aumentar Texto</p>
-           <button className="tamanho" onClick={toggleBigText}>
-           <p dangerouslySetInnerHTML={{ __html: bionicReadingActivated ? textVide(isBig ? "Diminuir tamanho texto" : "Aumentar tamanho texto") : isBig ? "Diminuir tamanho texto" : "Aumentar tamanho texto"}}></p>
-            </button>
-            <button onClick={toggleReading}>
-            <p dangerouslySetInnerHTML={{ __html: bionicReadingActivated ? textVide("Desativar leitura bionica") : "Acionar leitura bionica"}}></p>
-            </button>
-            <p dangerouslySetInnerHTML={{ __html:bionicReadingActivated ?  textVide("Bionic Reading is a new method facilitating the reading process by guiding the eyes through text."): "sem leitura bionica"}}></p>
+            <div className="colunaTexto">
+              <div class="row">
+                <div class="col-md-2">
+                  <p dangerouslySetInnerHTML={{ __html: bionicReadingActivated ? textVide("Alterar paleta de cores") : "Alterar paleta de cores"}}></p> 
+                </div>
+                <div class="col-md-auto">
+                  <button className="paletaCores botao" onClick={toggleDarkMode}>
+                  <p dangerouslySetInnerHTML={{ __html: bionicReadingActivated ? textVide(isDarkMode ? "Alternar para Modo Claro" : "Alternar para Modo Escuro") : isDarkMode ? "Alternar para Modo Claro" : "Alternar para Modo Escuro"}}></p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p></p>
+            <div className="colunaTexto">
+              <div class="row">
+                <div class="col-md-2">
+                  <p dangerouslySetInnerHTML={{ __html: bionicReadingActivated ? textVide("Alterar tamanho texto") : "Alterar tamanho texto"}}></p>
+                </div>
+              <div class="col-md-auto">
+                  <button className="tamanho botao" onClick={toggleBigText}>
+                  <p dangerouslySetInnerHTML={{ __html: bionicReadingActivated ? textVide(isBig ? "Diminuir tamanho texto" : "Aumentar tamanho texto") : isBig ? "Diminuir tamanho texto" : "Aumentar tamanho texto"}}></p>
+                </button>
+                </div>
+              </div>
+            </div>
+            <p></p>
+            <div className="colunaTexto">
+              <div class="row">
+                <div class="col-md-2">
+                  <p dangerouslySetInnerHTML={{ __html:bionicReadingActivated ?  textVide("A leitura bionica acelera a assimiliação e leitura do texto.") : "A leitura bionica acelera a assimiliação e leitura do texto."}}></p>
+                </div>
+                <div class="col-md-auto">
+                  <button className="botao" onClick={toggleReading}>
+                    <p dangerouslySetInnerHTML={{ __html:bionicReadingActivated ?  textVide("Desativar leitura bionica."): "Acionar leitura bionica"}}></p>
+                  </button>
+                </div>
+              </div>
+            </div>
           </header>
           <main>
-          <div>
-            </div>
           </main>
         </div>
       </div>

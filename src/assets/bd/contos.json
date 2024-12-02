@@ -1,0 +1,13 @@
+[
+    {
+        "nome" : "Antígona",
+        "resumo": "Filha de Édipo, personagem da peça de Sófocles",
+        "qntAcessos": 0
+    },
+
+    {
+        "nome": "Epopeia de Gilgamesh",
+        "resumo": "lenda suméria, uma das história listeraria mais antigas",
+        "qntAcessos": 0
+    }
+]

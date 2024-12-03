@@ -4,6 +4,8 @@ import "./header.css";
 import { Titulo } from "./header";
 import React, { useState, useEffect, Component } from "react";
 import '../.././pages/Acessibilidade/acessibilidade_page.js';
+import '../../pages/Ranking/ranking_page.js';
+
 
 
 
@@ -42,7 +44,7 @@ function Header() {
                                     <Link class="nav-link active" aria-current="page" to='/Acessibilidade'><p className="items acessibilidade">Acessibilidade</p></Link>
                                 </li>
                                 <NavDropdown title="Lista" id="basic-nav-dropdown" className="items lista">
-                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                    <NavDropdown.Item href="Ranking">Ranking</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">
                                         Another action
                                     </NavDropdown.Item>

@@ -1,13 +1,32 @@
 import { Title } from "./styles";
 import { Title_heroi } from "./styles";
 import imagem from "../../assets/lore.png"
+import React, { useEffect } from "react";
+import Contos from "../../assets/bd/contos.json"
+import incrementValue from "../../components/Funcoes/view_count";
 
+//https://akhtarvahid.hashnode.dev/how-to-access-local-json-file-to-react
 
-function ranking() {
+ export default function Ranking() {
+    const [UsersData] = React.useState(Contos)
+    incrementValue(Contos, "qntAcessos")
+    
+    
+    
+    
+
     return (
+    
+
         <div>
             <Title> Bem vindo à página Ranking</Title>
             <br/>
+            
+            {UsersData && UsersData.map(({qntAcessos, nome}) => (
+                <div key={qntAcessos} className="row">
+                    <strong>{nome}</strong>
+                </div>
+            ))} 
 
             <div class="row">,
                 <div class="col-md-1">
@@ -71,7 +90,7 @@ function ranking() {
                         Etiam vel sit malesuada id sed. Et eget nullam mattis convallis elit.</p>
                 </div>
             </div>
-            
+            export default ranking;
             <br/>
             
             <div class="row">,
@@ -115,12 +134,8 @@ function ranking() {
             <br/>
 
 
-
-
-
-
         </div>
     )
 }
 
-export default ranking;
+

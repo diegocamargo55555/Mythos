@@ -7,6 +7,8 @@ import incrementValue from "../../components/Funcoes/view_count";
 
 //https://akhtarvahid.hashnode.dev/how-to-access-local-json-file-to-react
 
+
+
  export default function Ranking() {
     const [UsersData] = React.useState(Contos)
     incrementValue(Contos, "qntAcessos")
@@ -22,15 +24,16 @@ import incrementValue from "../../components/Funcoes/view_count";
             <Title> Bem vindo à página Ranking</Title>
             <br/>
             
-            {UsersData && UsersData.map(({qntAcessos, nome}) => (
+
+            <div class="row">,
+                <div class="col-md-1">
+                    <h1>1º</h1>
+                    <p></p>             {UsersData && UsersData.map(({qntAcessos, nome}) => (
                 <div key={qntAcessos} className="row">
                     <strong>{nome}</strong>
                 </div>
             ))} 
 
-            <div class="row">,
-                <div class="col-md-1">
-                    <h1>1º</h1>
                 </div>
                 <div class="col-md-2">
                     <img src={imagem} width="200" height="200" />
@@ -90,7 +93,6 @@ import incrementValue from "../../components/Funcoes/view_count";
                         Etiam vel sit malesuada id sed. Et eget nullam mattis convallis elit.</p>
                 </div>
             </div>
-            export default ranking;
             <br/>
             
             <div class="row">,

@@ -6,7 +6,7 @@ import Error from "./pages/Error/error._page";
 import Pesquisa from "./pages/Pesquisa/pesquisa_page";
 import Acessibilidade from "./pages/Acessibilidade/acessibilidade_page";
 import Ranking from "./pages/Ranking/ranking_page";
-
+import AntigonaConto from "./pages/Contos/AntigonaConto";
 
 export default RoutesApp;
 
@@ -21,7 +21,7 @@ function RoutesApp() {
                     <Route path="/Pesquisa" element={<Pesquisa />} />
                     <Route path="/acessibilidade" element={<Acessibilidade />} />
                     <Route path="/Ranking" element={<Ranking />} />
-
+                    <Route path="/Antigona-Conto" element={<AntigonaConto/>} />
                 </Routes>
             </backgrond>
         </BrowserRouter>

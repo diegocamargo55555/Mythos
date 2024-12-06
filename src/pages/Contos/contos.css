@@ -4,6 +4,7 @@
     background-color: #EDF2F4;
     color: black;  
     white-space: pre-wrap;
+    overflow:scroll;
 }
 
 .dark-mode {
@@ -14,7 +15,14 @@
     color: #EDF2F4;
     white-space: pre-wrap;
 }
-
+.sumario{
+    background-color: #eab464;
+    width: 13%;
+    position: fixed;
+    margin-left: 1.5%;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
 .smallText {
     height: 650px;
     font-size: 16px;

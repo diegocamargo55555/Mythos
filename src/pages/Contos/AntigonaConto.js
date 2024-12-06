@@ -29,23 +29,35 @@ function AntigonaConto() {
     },[]);
     let array = contos.filter(item => item.nome === "Antígona")
     if(bionicReadingActivated){
-      for(var i = 0; i < array[0].quantidadeParagrafos; i++){
-        array[0].texto[i] = textVide(array[0].texto[i]);
+      array[0].texto = textVide(array[0].texto);
+      for(var i = 0; i < array[0].subtitulos.length; i++){
+        array[0].subtitulos[i] = textVide(array[0].subtitulos[i]);
       }
     }
+  
+
     return (
         <div class="container" className={isDarkMode ? 'dark-mode' : "body-claro"}>
             <div className={isBig ? "bigText" : "smallText"}> 
-            {array.map((item, array) => (
-              <Fragment>
-              <strong><h1>{item.nome}</h1></strong>
-              </Fragment> 
-            ))}
-            {array.map(({ array, texto }) => (
-              <div key={texto}>
-                    <p dangerouslySetInnerHTML={{ __html:texto}}></p>
+              <div class="row">
+                <div class="col-md-2">
+                  <div className="sumario">
+                  {array.map(({array, subtitulos}) => (
+                        <div key={subtitulos} className="row">
+                            <p dangerouslySetInnerHTML={{ __html: subtitulos}}></p>
+                        </div>
+                    ))}
                   </div>
-            ))}
+                  </div>
+                  <div class="col-md-10">
+                {array.map((item, array) => (
+                  <Fragment>
+                  <strong><h1>{item.nome}</h1></strong>
+                  <p dangerouslySetInnerHTML={{ __html:item.texto}}></p>
+                  </Fragment> 
+                ))}
+                </div>
+              </div>
             </div>
         </div>
     )

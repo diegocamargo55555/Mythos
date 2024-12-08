@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Title } from "./styles";
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect} from "react";
 import imagem from "../../assets/lore.png"
 import "./home.css"
 import { textVide } from 'text-vide';

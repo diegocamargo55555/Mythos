@@ -6,12 +6,14 @@
         "referencias": "\nhttps://brasilescola.uol.com.br/mitologia/mito-de-edipo.htm\nhttps://www.britannica.com/topic/Antigone-Greek-mythology\nhttps://www.sparknotes.com/drama/antigone/characters/\nhttps://www.britannica.com/topic/Polyneices\nhttps://www.sparknotes.com/drama/antigone/character/antigone/\nhttps://www.sparknotes.com/drama/antigone/summary/\nhttps://www.cliffsnotes.com/literature/o/the-oedipus-trilogy/play-summary/antigone",
         "local": "Tebas",
         "data": "441 AD",
+        "paginaNome": "Antigona-Conto",
         "qntAcessos": 5
     },
 
     {
         "nome": "Epopeia de Gilgamesh",
         "resumo": "lenda suméria, uma das história listeraria mais antigas",
+        "paginaNome": "EpopeiaGilgamesh",
         "qntAcessos": 3
     }
 ]

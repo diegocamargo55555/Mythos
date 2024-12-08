@@ -7,6 +7,7 @@ import Pesquisa from "./pages/Pesquisa/pesquisa_page";
 import Acessibilidade from "./pages/Acessibilidade/acessibilidade_page";
 import Ranking from "./pages/Ranking/ranking_page";
 import AntigonaConto from "./pages/Contos/AntigonaConto";
+import ListaContos from "./pages/ListaContos/listaContos";
 
 export default RoutesApp;
 
@@ -16,17 +17,15 @@ function RoutesApp() {
             <Header />
             <backgrond>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/*" element={<Error />} />
-                    <Route path="/Pesquisa" element={<Pesquisa />} />
-                    <Route path="/acessibilidade" element={<Acessibilidade />} />
-                    <Route path="/Ranking" element={<Ranking />} />
-                    <Route path="/Antigona-Conto" element={<AntigonaConto/>} />
+                    <Route path="/" element={<Home />}></Route>
+                    <Route path="/*" element={<Error />}></Route>
+                    <Route path="/Pesquisa" element={<Pesquisa />}></Route>
+                    <Route path="/acessibilidade" element={<Acessibilidade />}></Route>
+                    <Route path="/Ranking" element={<Ranking />}></Route>
+                    <Route path="/Antigona-Conto" element={<AntigonaConto/>}></Route>
+                    <Route path="/Lista-Contos" element={<ListaContos/>}></Route>
                 </Routes>
             </backgrond>
         </BrowserRouter>
     );
 }
-
-
-

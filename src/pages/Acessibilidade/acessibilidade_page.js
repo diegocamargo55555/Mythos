@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./acessibilidade.css"
 import { textVide } from 'text-vide';
+import { use } from "react";
 
 const Acessibilidade = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
     const[isBig, setisBig] = useState(false);
     const[bionicReadingActivated, setReading] = useState(false);
-  
+    
     useEffect(() => {
       const savedMode = localStorage.getItem("darkMode");
       if (savedMode === "enabled") {
@@ -46,7 +47,9 @@ const Acessibilidade = () => {
       setReading((prevMode) => !prevMode);
       window.location.reload();
     }
+
     return (
+      
       <div className={isDarkMode ? "dark-mode" : "body-claro"}>
         <div className={isBig ? "bigText" : "smallText"}> 
           <header>
@@ -97,4 +100,3 @@ const Acessibilidade = () => {
     );
   };
   export default Acessibilidade;
-//dangerouslySetInnerHTML={{ __html:texto("Bionic Reading is a new method facilitating the reading process by guiding the eyes through text.")}

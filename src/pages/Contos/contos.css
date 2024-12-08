@@ -1,6 +1,6 @@
 .body-claro {
     margin: 0;
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; 
+    font-family: Helvetica, sans-serif; 
     background-color: #EDF2F4;
     color: black;  
     white-space: pre-wrap;
@@ -9,18 +9,22 @@
 
 .dark-mode {
     margin:0;
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    width: 100%;
+    font-family: Helvetica, sans-serif; 
     background-color: #1D1E2C;
     color: #EDF2F4;
     white-space: pre-wrap;
+    overflow: scroll;
+}
+.dark-mode .sumario{
+    background-color: #BB6B00;
 }
 .sumario{
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     background-color: #eab464;
     width: 13%;
     position: fixed;
     margin-left: 1.5%;
-    padding: 10px;
+    padding-left: 10px;
     overflow-wrap: break-word;
 }
 .smallText {

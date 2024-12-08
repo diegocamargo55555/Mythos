@@ -30,36 +30,46 @@ function AntigonaConto() {
     let array = contos.filter(item => item.nome === "Antígona")
     if(bionicReadingActivated){
       array[0].texto = textVide(array[0].texto);
-      for(var i = 0; i < array[0].subtitulos.length; i++){
-        array[0].subtitulos[i] = textVide(array[0].subtitulos[i]);
+    }
+
+    function irAteParteSumario(){
+      window.onload = function(){  
+        document.getElementById("div").scrollTo(0, 10000);
       }
     }
-  
-
     return (
-        <div class="container" className={isDarkMode ? 'dark-mode' : "body-claro"}>
+        <div id="div" class="container" className={isDarkMode ? 'dark-mode' : "body-claro"}>
             <div className={isBig ? "bigText" : "smallText"}> 
               <div class="row">
                 <div class="col-md-2">
                   <div className="sumario">
-                  {array.map(({array, subtitulos}) => (
-                        <div key={subtitulos} className="row">
-                            <p dangerouslySetInnerHTML={{ __html: subtitulos}}></p>
-                        </div>
-                    ))}
+                  <div id="um">1. Antigona</div>
+                  <p>1.1 Protagonista</p>
+                  <p>2. Édipo</p>
+                  <p>3. Luta pelo trono</p>
+                  <p>4. Justiça</p>
+                  <p>5. Consequências</p>
+                  <div id="antigona" onClick={irAteParteSumario}>6. Outra Versão</div>
+
                   </div>
-                  </div>
-                  <div class="col-md-10">
+                </div>
+              <div class="col-md-10">
                 {array.map((item, array) => (
                   <Fragment>
                   <strong><h1>{item.nome}</h1></strong>
                   <p dangerouslySetInnerHTML={{ __html:item.texto}}></p>
                   </Fragment> 
                 ))}
-                </div>
+                <h3>Refêrencias</h3>
+                {array.map((item, array) => (
+                  <Fragment>
+                  <p dangerouslySetInnerHTML={{ __html:item.referencias}}></p>
+                  </Fragment> 
+                ))}
               </div>
             </div>
-        </div>
+          </div>
+      </div>
     )
 }
 

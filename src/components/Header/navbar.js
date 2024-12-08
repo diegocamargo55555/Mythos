@@ -6,9 +6,6 @@ import React, { useState, useEffect, Component } from "react";
 import '../.././pages/Acessibilidade/acessibilidade_page.js';
 import '../../pages/Ranking/ranking_page.js';
 
-
-
-
 function Header() {
 
     const [isDarkMode, setIsDarkMode] = useState(false);

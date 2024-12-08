@@ -4,6 +4,7 @@ import React, { useState, useEffect, Component, Fragment} from "react";
 import imagem from "../../assets/lore.png"
 import { textVide } from 'text-vide';
 import contos from '../../assets/bd/contos.json'
+import "./listaContos.css"
 
 
 function Home() {
@@ -35,8 +36,10 @@ function Home() {
             <h4 dangerouslySetInnerHTML={{ __html: bionicReadingActivated ? textVide("Lista de Contos: ") : "Lista de Contos: "}}></h4>
             {contos.map((item, contos) => (
                   <Fragment>
-                  <strong><a href={item.paginaNome}>{item.nome}</a></strong>
-                  <p dangerouslySetInnerHTML={{ __html:item.resumo}}></p>
+                    <div className="caixaLink">
+                        <a href={item.paginaNome}>{item.nome}</a>
+                        <p dangerouslySetInnerHTML={{ __html:item.resumo}}></p>
+                    </div>
                   </Fragment> 
                 ))}
             </div>

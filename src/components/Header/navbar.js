@@ -49,7 +49,7 @@ function Header() {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <Link class="nav-link active" aria-current="page" to='/Acessibilidade'><p className="items acessibilidade">Acessibilidade</p></Link>
+                                    <a href="Acessibilidade"><p className="items acessibilidade">Acessibilidade</p></a>
                                 </li>
                                 <NavDropdown title="Lista" id="basic-nav-dropdown" className="items lista">
                                     <NavDropdown.Item href="Ranking">Ranking</NavDropdown.Item>
@@ -88,7 +88,7 @@ function Header() {
                 <body className={isDarkMode ? "body background-dark" : "body background-claro"}>
                     <nav class="navbar navbar-expand-sm">
                         <div class="container-fluid"className={isDarkMode ? "header-modoescuro" : "header"}>
-                            <Link class="navbar-brand" to='/' className="titulo"><Titulo>Mythos</Titulo></Link>
+                            <a href="./" className="titulo"><Titulo>Mythos</Titulo></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>

@@ -6,6 +6,7 @@ import Error from "./pages/Error/error._page";
 import Pesquisa from "./pages/Pesquisa/pesquisa_page";
 import Acessibilidade from "./pages/Acessibilidade/acessibilidade_page";
 import Ranking from "./pages/Ranking/ranking_page";
+import Ranking_herois from "./pages/Ranking/ranking_herois_page";
 import AntigonaConto from "./pages/Contos/AntigonaConto";
 import Antigona from "./pages/Herois/Antigona";
 import ListaContos from "./pages/ListaContos/listaContos";
@@ -25,6 +26,7 @@ function RoutesApp() {
                     <Route path="/Pesquisa" element={<Pesquisa />}></Route>
                     <Route path="/acessibilidade" element={<Acessibilidade />}></Route>
                     <Route path="/Ranking" element={<Ranking />}></Route>
+                    <Route path="/Ranking_herois" element={<Ranking_herois />}></Route>
                     <Route path="/Antigona-Conto" element={<AntigonaConto/>}></Route>
                     <Route path="/Lista-Contos" element={<ListaContos/>}></Route>
                     <Route path="/Fato-Ou-Mito" element={<FatoOuMito/>}></Route>

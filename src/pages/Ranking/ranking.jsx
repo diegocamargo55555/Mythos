@@ -1,5 +1,3 @@
-import imagem from "../../assets/lore.png"
-
 export function Post(props) {
     return (
         <div>
@@ -18,7 +16,5 @@ export function Post(props) {
                 </div>
             </div>
         </div>
-
-
     )
 }

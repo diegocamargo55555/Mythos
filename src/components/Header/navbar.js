@@ -5,6 +5,8 @@ import { Titulo } from "./header";
 import React, { useState, useEffect, Component } from "react";
 import '../.././pages/Acessibilidade/acessibilidade_page.js';
 import '../../pages/Ranking/ranking_page.js';
+import '../../pages/Ranking/ranking_herois_page.js';
+
 
 function Header() {
 
@@ -53,7 +55,9 @@ function Header() {
                                 </li>
                                 <NavDropdown title="Lista" id="basic-nav-dropdown" className="items lista">
                                     <NavDropdown.Item href="Ranking">Ranking</NavDropdown.Item>
+                                    <NavDropdown.Item href="Ranking_herois">Ranking de Herois</NavDropdown.Item>     
                                     
+                                                                   
                                     <NavDropdown.Item href="Fato-Ou-Mito">Fato VS Mito</NavDropdown.Item>
                                     <NavDropdown.Item href="/Curiosidade-Diaria">Curiosidade Diária</NavDropdown.Item>
                                     <NavDropdown.Divider />

@@ -8,6 +8,7 @@ import Acessibilidade from "./pages/Acessibilidade/acessibilidade_page";
 import Ranking from "./pages/Ranking/ranking_page";
 import AntigonaConto from "./pages/Contos/AntigonaConto";
 import ListaContos from "./pages/ListaContos/listaContos";
+import FatoOuMito from "./pages/FatoOuMito/fatoOuMito";
 
 export default RoutesApp;
 
@@ -24,6 +25,7 @@ function RoutesApp() {
                     <Route path="/Ranking" element={<Ranking />}></Route>
                     <Route path="/Antigona-Conto" element={<AntigonaConto/>}></Route>
                     <Route path="/Lista-Contos" element={<ListaContos/>}></Route>
+                    <Route path="/Fato-Ou-Mito" element={<FatoOuMito/>}></Route>
                 </Routes>
             </backgrond>
         </BrowserRouter>

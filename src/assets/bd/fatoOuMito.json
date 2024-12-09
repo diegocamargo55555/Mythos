@@ -1,0 +1,12 @@
+[
+    {
+        "nome" : "O cavalo de troia",
+        "descricao": "O cavalo de troia realmente existiu?",
+        "fatoMito": "mito"
+    },
+    {
+        "nome": "Caixa de Pandora",
+        "descricao": "a caixa de pandora não era uma caixa?",
+        "fatoMito": "fato"
+    }
+]

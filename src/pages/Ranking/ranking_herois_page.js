@@ -10,7 +10,7 @@ import "./ranking.css"
 
 
 
-export default function Ranking() {
+export default function Ranking_herois() {
 
 
 

@@ -29,13 +29,21 @@ h4{
 .a-Home{
     color: #1D1E2C;
 }
-
-.dark-mode .a-Home{
-    color: #EDF2F4;
-}
 .direita{
     text-align: right;
 }
 .seperacaoColunas{
     margin-top: 40px;
+}
+
+.carta{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 30%;
+    border: 2px solid black;
+    outline: #1B766A solid 10px;
+    height: 200px;
+    width: 40%;
+    text-align: center;
+    padding-top: 70px;
 }

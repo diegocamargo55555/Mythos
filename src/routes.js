@@ -11,7 +11,7 @@ import Antigona from "./pages/Herois/Antigona";
 import ListaContos from "./pages/ListaContos/listaContos";
 import ListaHerois from "./pages/ListaHerois/listaHerois";
 import FatoOuMito from "./pages/FatoOuMito/fatoOuMito";
-
+import Curiosidade from "./pages/Curiosidade/curiosidade";
 export default RoutesApp;
 
 function RoutesApp() {
@@ -30,6 +30,7 @@ function RoutesApp() {
                     <Route path="/Fato-Ou-Mito" element={<FatoOuMito/>}></Route>
                     <Route path="/Antigona" element={<Antigona/>}></Route>
                     <Route path="/Lista-Herois" element={<ListaHerois/>}></Route>
+                    <Route path="/Curiosidade-Diaria" element={<Curiosidade/>}></Route>
                 </Routes>
             </backgrond>
         </BrowserRouter>

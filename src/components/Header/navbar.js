@@ -55,6 +55,7 @@ function Header() {
                                     <NavDropdown.Item href="Ranking">Ranking</NavDropdown.Item>
                                     
                                     <NavDropdown.Item href="Fato-Ou-Mito">Fato VS Mito</NavDropdown.Item>
+                                    <NavDropdown.Item href="/Curiosidade-Diaria">Curiosidade Diária</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item href="Lista-Herois">
                                         Lista de Herois

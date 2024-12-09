@@ -72,6 +72,17 @@ function Home() {
                     <p>Escolha alguém familiar, ou descubra alguém novo!</p>
                     </div>
                 <br/>
+
+                <div class="row">
+                <div class="col-md-10">
+                    <h6 className="direita">Veja uma curiosidade diária todo dia!</h6>
+                </div>
+                <div class="col-md-2">
+                   <h1><a className="a-Home" href="/Curiosidade-Diaria">Curiosidade</a></h1>
+                   <h1><a className="a-Home" href="/Curiosidade-Diaria">Diária</a></h1>
+                </div>
+            </div>
+            <br/>
             </div>
             </div>
         </div>

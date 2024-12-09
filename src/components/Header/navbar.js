@@ -49,7 +49,7 @@ function Header() {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a href="Acessibilidade"><p className="items acessibilidade">Acessibilidade</p></a>
+                                    <a className="a" href="Acessibilidade"><p className="items acessibilidade">Acessibilidade</p></a>
                                 </li>
                                 <NavDropdown title="Lista" id="basic-nav-dropdown" className="items lista">
                                     <NavDropdown.Item href="Ranking">Ranking</NavDropdown.Item>
@@ -63,7 +63,7 @@ function Header() {
                                     </NavDropdown.Item>
                                 </NavDropdown>
                                 <li class="nav-item">
-                                    <Link class="nav-link active" aria-current="page" to='/Pesquisa'><p className="items pesquisa">Pesquisa</p></Link>
+                                    <a className="a" href="Pesquisa"><p className="items pesquisa">Pesquisa</p></a>
                                 </li>
 
                             </ul>

@@ -26,11 +26,15 @@
 h4{
     text-align: center;
 }
-a{
-    text-decoration: none;
-    color: black;  
+.a{
+    color: #eab464;
 }
 .caixaLink{
-    
+    width: 30%;
+    margin-left: 30%;
     background-color: #b8d8d9;
 }
+
+.hr{
+    color:#EDF2F4;
+  }

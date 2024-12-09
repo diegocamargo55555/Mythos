@@ -37,7 +37,8 @@ function Home() {
             {contos.map((item, contos) => (
                   <Fragment>
                     <div className="caixaLink">
-                        <a href={item.paginaNome}>{item.nome}</a>
+                        <strong><a className="a" href={item.paginaNome}>{item.nome}</a></strong>
+                        <hr className='hr'/>
                         <p dangerouslySetInnerHTML={{ __html:item.resumo}}></p>
                     </div>
                   </Fragment> 

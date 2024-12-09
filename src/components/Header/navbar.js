@@ -53,13 +53,14 @@ function Header() {
                                 </li>
                                 <NavDropdown title="Lista" id="basic-nav-dropdown" className="items lista">
                                     <NavDropdown.Item href="Ranking">Ranking</NavDropdown.Item>
-                                    <NavDropdown.Item href="Lista-Contos">
-                                        Lista de Contos
-                                    </NavDropdown.Item>
+                                    
                                     <NavDropdown.Item href="Fato-Ou-Mito">Fato VS Mito</NavDropdown.Item>
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item href="#action/3.4">
-                                        Separated link
+                                    <NavDropdown.Item href="Lista-Herois">
+                                        Lista de Herois
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item href="Lista-Contos">
+                                        Lista de Contos
                                     </NavDropdown.Item>
                                 </NavDropdown>
                                 <li class="nav-item">

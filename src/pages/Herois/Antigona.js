@@ -2,8 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState, useEffect, Component, Fragment} from "react";
 import imagem from "../../assets/lore.png"
 import { textVide } from 'text-vide';
-import "./contos.css";
-import contos from '../../assets/bd/contos.json'
+import "./herois.css";
+import contos from '../../assets/bd/herois.json'
 
 function AntigonaConto() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -38,13 +38,9 @@ function AntigonaConto() {
               <div class="row">
                 <div class="col-md-2">
                   <div className="sumario">
-                  <div id="um">1. Antigona</div>
-                  <p>1.1 Protagonista</p>
-                  <p>2. Édipo</p>
-                  <p>3. Luta pelo trono</p>
-                  <p>4. Justiça</p>
-                  <p>5. Consequências</p>
-                  <div id="antigona">6. Outra Versão</div>
+                  <div>1. Introdução</div>
+                  <p>2 Personalidade e Aparência</p>
+                  <p>3. História</p>
                   </div>
                 </div>
               <div class="col-md-10">

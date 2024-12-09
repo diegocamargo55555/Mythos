@@ -4,7 +4,7 @@ import React, { useState, useEffect, Component} from "react";
 import imagem from "../../assets/lore.png"
 import { textVide } from 'text-vide';
 import fatoOuMito from '../../assets/bd/fatoOuMito.json'
-
+import "./fatoOuMito.css"
 
 class FatoOuMito extends Component {
   constructor(props){
@@ -12,12 +12,16 @@ class FatoOuMito extends Component {
     this.state = {
       i: 1,
       texto: fatoOuMito[0],
+      perder: false,
+      numMax: 2,
+      isDarkMode: localStorage.getItem("darkMode"),
+      isBigText: localStorage.getItem("bigText"),
+      isBionic: localStorage.getItem("bioniReading")
     }
-      var proximo = true;
-      var perder = false;
-      var pontuacao = 0;
+      const setIsDarkMode = false;
       this.buttonFato = this.buttonFato.bind(this);
       this.buttonMito = this.buttonMito.bind(this);
+      this.buttonResetar = this.buttonResetar.bind(this);
     }
     pegarTexto(i) {
       let array = fatoOuMito[i];
@@ -55,23 +59,51 @@ class FatoOuMito extends Component {
             });
         }
     };
+    buttonResetar = () =>{
+      this.setState({
+        i: 1,
+        texto: fatoOuMito[0],
+        perder: false,
+        numMax: 2
+      })
+    }
     render(){
       if(this.state.perder == true)
       {
         return(
-          <div>
-            VOCE PERDEU D:
+          <div className={this.state.isDarkMode == "enabled" ? "dark-mode" : "body-claro"}>
+            <h4 className="margem"> PONTUACAO FINAL: {this.state.i - 1}</h4>      
+            <div className="texto">
+              <p>VOCE PERDEU D:</p>
+              <button className="erro" onClick={this.buttonResetar}>JOGAR NOVAMENTE?</button>
+            </div>
           </div>
         );
       }else{
-        return (
-          <div>      
-            <p>PONTUACAO: {this.state.i - 1}</p>          
-            <div>{this.state.texto.nome}</div>
-            <button onClick={this.buttonMito}>MITO</button>
-            <button onClick={this.buttonFato}>FATO</button>
-          </div>
-        );
+        if(this.state.i > this.state.numMax){
+          return(
+            <div className={this.state.isDarkMode == "enabled" ? "dark-mode" : "body-claro"}>
+              <h4 className="margem"> PONTUACAO FINAL: {this.state.i - 1}</h4>      
+              <div className="texto">
+            <p>VOCE VENCEU :DD!</p>
+            <button className="acerto" onClick={this.buttonResetar}>JOGAR NOVAMENTE?</button>
+            </div>
+            </div>
+          );
+        } else{
+          return (
+            <div className={this.state.isDarkMode == "enabled" ? "dark-mode" : "body-claro"}>
+              <div className="carta">
+                <h4>PONTUACAO: {this.state.i - 1}</h4>          
+                <p className="texto">{this.state.texto.nome}</p>
+              <p className="texto">{this.state.texto.descricao}</p>
+              </div>
+                <button className="botao1" onClick={this.buttonMito}>MITO</button>
+                <button className="botao2" onClick={this.buttonFato}>FATO</button>
+  
+            </div>
+          );
+        }
       }
   }
 }

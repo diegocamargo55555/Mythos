@@ -56,7 +56,7 @@ function Header() {
                                     <NavDropdown.Item href="Lista-Contos">
                                         Lista de Contos
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                    <NavDropdown.Item href="Fato-Ou-Mito">Fato VS Mito</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item href="#action/3.4">
                                         Separated link

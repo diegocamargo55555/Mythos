@@ -3,8 +3,18 @@
     font-family: "Poppins", sans-serif;
     background-color: #EDF2F4;
     color: black;  
+    overflow:scroll;
+    height: 800px;
 }
-
+.carta{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 30%;
+    border: 2px solid black;
+    outline: #1B766A solid 10px;
+    height: 200px;
+    width: 40%;
+}
 .dark-mode {
     margin:0;
     font-family: "Poppins", sans-serif;
@@ -13,6 +23,25 @@
     color: #EDF2F4;
 }
 
+.erro{
+    background-color: #A23A5E;
+    transition: 0s;
+}
+.acerto{
+    background-color: #1B766A;
+    transition: 0s;
+}
+.texto{
+    text-align: center;
+}
+.botao1{
+    margin-left: 30%;
+    transition: 0s;
+}
+.botao2{
+    margin-left: 30%;
+    transition: 0s;
+}
 .smallText {
     height: 650px;
     font-size: 16px;
@@ -21,6 +50,9 @@
 .bigText {
     font-size: 36px;
     height: 950px;
+}
+.margem{
+    margin-top: 100px;
 }
 h4{
     text-align: center;

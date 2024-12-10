@@ -1,55 +1,51 @@
-body{
-
-    background: #d1d5db;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.height{
-
-    height: 100vh;
+.container{
+    width: 600px;
+    padding-top: 100px;
 }
 
-.form{
-
-    position: relative;
+.container form label{
+    display: block;
+    margin-bottom: 0.8em;
+    font-weight: bold;
 }
 
-.form .fa-search{
-
-    position: absolute;
-    top:20px;
-    left: 20px;
-    color: #9ca3af;
-
+.container form input{
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: solid 2px rgba(255, 255, 255, 0);
+    border-radius: 8px 8px 0 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+    width: 100%;
+    outline: none;
+    transition: background-color 0.5s ease-in;
 }
 
-.form span{
-
-        position: absolute;
-    right: 17px;
-    top: 13px;
-    padding: 2px;
-    border-left: 1px solid #d1d5db;
-
+.container form input:focus{
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.container .search-results ul li{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    list-style-type: '\2AF8';
 }
 
-.left-pan{
-    padding-left: 7px;
+.container .search-results ul li:hover{
+    cursor: pointer;
+    
 }
 
-.left-pan i{
-   
-   padding-left: 10px;
+
+.container .search-results ul li span{
+    padding-left: 1ch;
 }
 
-.form-input{
 
-    height: 55px;
-    text-indent: 33px;
-    border-radius: 10px;
-}
-
-.form-input:focus{
-
-    box-shadow: none;
-    border:none;
-}

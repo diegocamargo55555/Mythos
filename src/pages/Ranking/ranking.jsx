@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export function Post(props) {
     return (
         <div className="padL">

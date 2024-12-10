@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState, useEffect, Component, Fragment} from "react";
-import imagem from "../../assets/lore.png"
 import { textVide } from 'text-vide';
 import contos from '../../assets/bd/contos.json'
 import "./listaContos.css"

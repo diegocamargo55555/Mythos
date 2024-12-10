@@ -1,17 +1,31 @@
-// interesante
-//https://medium.com/@andwebdev/design-and-develop-a-functional-search-bar-in-react-44321ed3c244
-//https://www.emgoto.com/react-search-bar/
-//https://dev.to/salehmubashar/search-bar-in-react-js-545l
-//https://www.youtube.com/watch?v=PFjfGv_WTpU
+import contos from '../../assets/bd/contos.json'
+import herois from '../../assets/bd/herois.json'
 
-function pesquisa() {
+import { useState } from 'react'
+import "./pesquisa.css"
+
+function Pesquisa() {
+
+    const [query, setQuery] = useState("");
     return (
+        <div className="container">
+            <form>
+                <input type="text" placeholder="Search..." className="search" onChange={e => setQuery(e.target.value)} />
+            </form>
+            <div className="search-results">
+                <ul>
+                    {contos.filter((user) => user.nome.toLocaleLowerCase().includes(query)).map((user) => (
+                        <li key={user.nome} className='listItem'>{user.nome}</li>
+                    ))}
 
-        <div>
-            <h1> Bem vindo à página de de Pesquisa</h1>
+                    {herois.filter((user) => user.nome.toLocaleLowerCase().includes(query)).map((user) => (
+                        <li key={user.nome} className='listItem'>{user.nome}</li>
+                    ))}
+                </ul>
+
+            </div>
         </div>
-
     )
 }
 
-export default pesquisa;
+export default Pesquisa;

@@ -29,10 +29,14 @@ h4{
 .a{
     color: #eab464;
 }
+
 .caixaLink{
     width: 30%;
     margin-left: 30%;
     background-color: #b8d8d9;
+}
+.dark-mode .caixaLink{
+    background-color: #668586;
 }
 
 .hr{

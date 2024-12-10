@@ -38,3 +38,7 @@ h4{
 .hr{
     color:#EDF2F4;
   }
+
+  .dark-mode .caixaLink{
+    background-color: #668586;
+}

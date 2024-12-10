@@ -8,6 +8,7 @@ export function Post(props) {
                 <div class="col-md-1">
                     <h1></h1>
                     <h3> <a href={props.paginaNome}>{props.nome}</a> </h3>
+
                     likes:{props.qntAcessos}
                 </div>
                 <div class="col-md-1">

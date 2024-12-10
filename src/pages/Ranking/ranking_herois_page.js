@@ -8,7 +8,7 @@ export default function Ranking_herois() {
         <div className="paddingLeft">
             {Heroi.map((post) => {
                 return (
-                    <Post nome={post.nome} qntAcessos={post.qntAcessos} resumo={post.resumo} imagem={post.imagem}/>
+                    <Post paginaNome={post.paginaNome} nome={post.nome} qntAcessos={post.qntAcessos} resumo={post.resumo} imagem={post.imagem}/>
                 )})}
         </div>
     )

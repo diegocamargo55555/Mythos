@@ -15,14 +15,13 @@ function Pesquisa() {
             <div className="search-results">
                 <ul>
                     {contos.filter((user) => user.nome.toLocaleLowerCase().includes(query)).map((user) => (
-                        <li key={user.nome} className='listItem'>{user.nome}</li>
+                        <li key={user.nome} className='listItem'><a className="a" href={user.paginaNome}>{user.nome}</a></li>
                     ))}
 
                     {herois.filter((user) => user.nome.toLocaleLowerCase().includes(query)).map((user) => (
-                        <li key={user.nome} className='listItem'>{user.nome}</li>
+                        <li key={user.nome} className='listItem'><a className="a" href={user.paginaNome}>{user.nome}</a></li>
                     ))}
                 </ul>
-
             </div>
         </div>
     )

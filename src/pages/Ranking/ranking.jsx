@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Post(props) {
     return (
-        <div>
+        <div className="padL">
             <br />
             <div class="row">
                 <div class="col-md-1">

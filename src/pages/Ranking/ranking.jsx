@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Post(props) {
     return (
         <div>
@@ -5,7 +7,7 @@ export function Post(props) {
             <div class="row">
                 <div class="col-md-1">
                     <h1></h1>
-                    <h3>{props.nome}</h3>
+                    <h3> <a href={props.paginaNome}>{props.nome}</a> </h3>
                     likes:{props.qntAcessos}
                 </div>
                 <div class="col-md-1">

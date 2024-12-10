@@ -12,7 +12,7 @@ export function Post(props) {
                     likes:{props.qntAcessos}
                 </div>
                 <div class="col-md-1">
-                    <img src={props.imagem} width="150" height="150" />
+                    <img className="foto" src={props.imagem} width="150" height="150" />
                 </div>
                 <div class="col-md-8">
                     <p>{props.resumo}</p>

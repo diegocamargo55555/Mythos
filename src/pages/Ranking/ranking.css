@@ -1,4 +1,39 @@
-div.paddingLeft {
-    padding-left: 100px;
-  }
-  
+.body-claro {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #EDF2F4;
+  color: black;  
+  overflow:scroll;
+}
+
+.dark-mode {
+  margin:0;
+  font-family: "Poppins", sans-serif;
+  background-color: #1D1E2C;
+  color: #EDF2F4;
+  overflow:scroll;
+}
+
+.smallText {
+  height: 650px;
+  font-size: 16px;
+}
+
+.bigText {
+  font-size: 36px;
+  height: 950px;
+}
+a{
+  color: inherit !important;
+  text-decoration: none !important;
+}
+h4{
+  text-align: center;
+}
+
+.foto{
+  margin-left: 50px;
+}
+p{
+  padding-left: 100px;
+}
